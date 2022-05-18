@@ -4,6 +4,7 @@ export default class Login extends React.Component {
   render() {
     return (
       <div data-testid="page-login">
+        <h1>Login</h1>
         <form data-testid="login-name-input">
           <button data-testid="login-submit-button" type="submit">Entrar</button>
         </form>

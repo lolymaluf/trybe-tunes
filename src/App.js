@@ -1,16 +1,24 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
+import Login from './pages/Login';
+import Album from './pages/Album';
+import Favorites from './pages/Favorites';
+import Profile from './pages/Profile';
+import ProfileEdit from './pages/ProfileEdit';
+import Search from './pages/Search';
+import NotFound from './pages/NotFound';
 
 class App extends React.Component {
   render() {
     return (
       <Switch>
-        <Route exact path ="/"></Route>
-        <Route path ="/album"></Route>
-        <Route path ="/favorites"></Route>
-        <Route path ="/profile"></Route>
-        <Route path = "/profile/edit"></Route>
-        <Route path = "/search"></Route>
+        <Route exact path="/"><Login /></Route>
+        <Route path="/album"><Album /></Route>
+        <Route path="/favorites"><Favorites /></Route>
+        <Route exact path="/profile"><Profile /></Route>
+        <Route path="/profile/edit"><ProfileEdit /></Route>
+        <Route path="/search"><Search /></Route>
+        <Route path="*"><NotFound /></Route>
       </Switch>
     );
   }

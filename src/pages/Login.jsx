@@ -11,7 +11,7 @@ export default class Login extends React.Component {
     isLoggedOn: false,
   }
 
-  /*   utilizar SEMPRE forma abaixo para alterar estado! */
+  /*   utilizar SEMPRE forma abaixo para alterar estado! pega o estado antigo e só modifica o que eu quero (que é a coisa nova) */
   handleChange = (event) => {
     /*       console.log(event.target.value); */
     this.setState((prevState) => ({ ...prevState, name: event.target.value }));

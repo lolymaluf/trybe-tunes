@@ -64,19 +64,20 @@ export default class Search extends React.Component {
             {` ${searchValue}`}
           </h1>
         )}
-        {albums.length === 0 ? (
+        {albums.length === 0 && searchValue.length > 0 ? (
           <h2>Nenhum álbum foi encontrado</h2>
         ) : (
           albums.map((album, index) => (
             <div key={ index }>
-              <h2>{album.collectionName}</h2>
-              <h2>{album.artistName}</h2>
               <Link
                 key={ album.collectionId }
                 data-testid={ `link-to-album-${album.collectionId}` }
                 to={ `/album/${album.collectionId}` }
-              />
-              <img src={ album.artworkUrl100 } alt="Álbum" />
+              >
+                <h2>{album.collectionName}</h2>
+                <h2>{album.artistName}</h2>
+                <img src={ album.artworkUrl100 } alt="Álbum" />
+              </Link>
             </div>
           )))}
       </div>

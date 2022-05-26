@@ -49,7 +49,6 @@ export default class Login extends React.Component {
             data-testid="login-submit-button"
             type="submit"
             disabled={ name.length < minNumber }
-            /*                 onClick={ this.OnClickButton } */
           >
             Entrar
           </button>

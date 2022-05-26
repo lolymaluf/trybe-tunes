@@ -35,17 +35,19 @@ export default class Login extends React.Component {
         { isLoading ? (
           <Loading />
         ) : ( */
-      <div data-testid="page-login">
+      <div data-testid="page-login" className="login">
         <h1>Login</h1>
         <form
           onSubmit={ this.handleSubmit }
         >
           <input
+            className="login-input"
             data-testid="login-name-input"
             value={ name }
             onChange={ this.handleChange }
           />
           <button
+            className="login-button"
             data-testid="login-submit-button"
             type="submit"
             disabled={ name.length < minNumber }

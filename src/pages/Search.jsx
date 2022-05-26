@@ -42,11 +42,13 @@ export default class Search extends React.Component {
         <h1>Search</h1>
         <form>
           <input
+            className="search-input"
             data-testid="search-artist-input"
             value={ artistName }
             onChange={ this.handleChange }
           />
           <button
+            className="search-button"
             data-testid="search-artist-button"
             type="submit"
             disabled={ artistName.length < minCharacter }

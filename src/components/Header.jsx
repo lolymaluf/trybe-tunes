@@ -23,14 +23,12 @@ export default class Header extends React.Component {
         { isLoading
           ? (<Loading />)
           : (
-            <span data-testid="header-user-name">
+            <h1 data-testid="header-user-name" className="user-header">
               { userName.name }
-            </span>)}
-        <nav>
+            </h1>)}
+        <nav className="nav-header">
           <Link data-testid="link-to-search" to="/search">SEARCH</Link>
-          <br />
           <Link data-testid="link-to-favorites" to="/favorites">FAVORITES</Link>
-          <br />
           <Link data-testid="link-to-profile" to="/profile">PROFILE</Link>
         </nav>
       </header>

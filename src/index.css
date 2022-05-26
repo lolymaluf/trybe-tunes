@@ -1,6 +1,9 @@
+
+
 body {
-  background-color: darkslategrey;
-  margin: 0;
+  background-color: rgb(0, 31, 31);
+  color: white;
+  margin: 20px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -17,4 +20,84 @@ code {
   align-items: center;
   display: flex;
   justify-content: center;
+}
+
+Header {
+  background-color: darkslategray;
+  padding: 20px;
+  align-items: center;
+/*   justify-content: space-between; */
+  margin-bottom: 20px;
+}
+.user-header{
+/*   font-family: cursive, monospace, sans-serif; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 31, 31);
+}
+
+.nav-header {
+  font-size: 30px;
+  color: white;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.search-input {
+  width: 300px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 31, 31);
+  padding: 0 10px;
+  font-size: 16px;
+  color: rgb(0, 31, 31);
+}
+
+.search-button {
+  margin-top: 20px;
+  width: 120px;
+  height: 40px;
+  border-radius: 20%;
+  background-color: darkslategray;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  color: white;
+  font-size: 20px;
+  display: flex-row;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-input{
+  width: 300px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 31, 31);
+  padding: 0 10px;
+  font-size: 16px;
+  color: rgb(0, 31, 31);
+  display: flex;
+  justify-content: center;
+}
+
+.login-button{
+  margin-top: 20px;
+  width: 120px;
+  height: 40px;
+  border-radius: 20%;
+  background-color: darkslategray;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
